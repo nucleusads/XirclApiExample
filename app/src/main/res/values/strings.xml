@@ -22,7 +22,7 @@
 
     <!--===============================================App Connection Details===============================================-->
 
-    <!--Suni : 18, Ani : 21 //// http://192.168.0.21:8000/api/v1/ -->
+    <!--Suni : 18, Ani : 21 -->
     <string name="connectionURL">http://192.168.0.21:8000/api/v1/</string>
     <string name="tagAuthenticationKey">wDgmH6BS0B5s/tcOmfAqtbZEhODMFJV55IeWrTbcW0w=</string>
     <string name="tagDefaultRefCode">RETUO50,ACQUO40</string>
