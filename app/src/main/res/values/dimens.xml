@@ -1,0 +1,10 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="headLine1">17sp</dimen>
+    <dimen name="bodyFont1">15sp</dimen>
+    <dimen name="bodyFont11">14sp</dimen>
+    <dimen name="bodyFont2">13sp</dimen>
+    <dimen name="bodyFont21">12sp</dimen>
+    <dimen name="bodyFont3">10sp</dimen>
+</resources>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center|left"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:weightSum="1" >
+
+        <TextView
+            android:id="@+id/txtDialogTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:text="Offers Details"
+            android:textColor="@color/black"
+            android:textSize="@dimen/headLine1"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/layClose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.9"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_close" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|left"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/layCP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp" >
+
+                <ImageView
+                    android:id="@+id/imgOffer"
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                      />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_alignBottom="@+id/imgOffer"
+                    android:background="@color/dark_transperant"
+                    android:gravity="bottom"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/txtOutletName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left|center"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:paddingTop="8dp"
+                        android:text="Store Name"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/bodyFont1"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtCouponName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center|left"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:text="Coupon Name"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/bodyFont2" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp" >
+
+                <TextView
+                    android:id="@+id/txtDescriptionTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="OFFER DESCRIPTION"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/bodyFont1"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="Description Text"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/bodyFont2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:padding="12dp"
+                android:background="@color/colorAccent"
+                android:orientation="vertical"
+                 >
+
+                <TextView
+                    android:id="@+id/txtOfferValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="OfferValue"
+                    android:gravity="center"
+                    
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/bodyFont1"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

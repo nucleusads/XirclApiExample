@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="firstnucleus.xircls.com.setup.SetupActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/layProfile">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="16dp"
+                        android:background="@drawable/border_for_button"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+
+                            <TextView
+                                android:id="@+id/txtUserHeading"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Create User Profile"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/bodyFont1"
+                                android:textStyle="bold"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="16dp"
+                            android:orientation="vertical"
+                            android:padding="4dp">
+
+                            <EditText
+                                android:id="@+id/edtMobileNumber"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/border"
+                                android:hint="Mobile Number"
+                                android:inputType="phone"
+                                android:padding="12dp"
+                                android:maxLength="10"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/bodyFont1"/>
+
+                            <EditText
+                                android:id="@+id/edtEmailId"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:background="@drawable/border"
+                                android:hint="Email Id"
+                                android:inputType="textEmailAddress"
+
+                                android:padding="12dp"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/bodyFont1"/>
+
+                            <EditText
+                                android:id="@+id/edtPinCode"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:background="@drawable/border"
+                                android:hint="Pin Code"
+                                android:inputType="number"
+                                android:padding="12dp"
+                                android:maxLength="6"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/bodyFont1"/>
+
+                            <EditText
+                                android:id="@+id/edtCity"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:background="@drawable/border"
+                                android:hint="City"
+                                android:inputType="textCapSentences"
+                                android:padding="12dp"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/bodyFont1"/>
+
+                            <EditText
+                                android:id="@+id/edtCountry"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:background="@drawable/border"
+                                android:hint="Country"
+                                android:inputType="textCapSentences"
+                                android:padding="12dp"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/bodyFont1"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="16dp"
+                        android:background="@drawable/border_for_button"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+
+                            <TextView
+                                android:id="@+id/txtConnectionHeading"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Setup Server Connection"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/bodyFont1"
+                                android:textStyle="bold"/>
+
+                        </LinearLayout>
+
+                        <CheckBox
+                            android:id="@+id/ckhUseDefault"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Use Default Credentials"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/bodyFont1"/>
+
+
+                        <LinearLayout
+                            android:id="@+id/layConnectionDetails"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="16dp"
+                            android:orientation="vertical">
+
+                            <EditText
+                                android:id="@+id/edtConnectionUrl"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:background="@drawable/border"
+                                android:hint="Connection Url"
+                                android:inputType="textCapSentences"
+                                android:padding="12dp"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/bodyFont1"/>
+
+                            <EditText
+                                android:id="@+id/edtAuthenticationKey"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:background="@drawable/border"
+                                android:hint="Authentication Key"
+                                android:inputType="textCapSentences"
+                                android:padding="12dp"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/bodyFont1"/>
+
+                            <EditText
+                                android:id="@+id/edtReferenceCode"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:background="@drawable/border"
+                                android:hint="Mrachant Reference Code"
+                                android:inputType="textCapSentences"
+                                android:padding="12dp"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/bodyFont1"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorAccent">
+
+            <Button
+                android:id="@+id/btnSaveProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+                android:text="Save Credentials"
+                android:textColor="@color/white"
+                android:textSize="@dimen/bodyFont1"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</LinearLayout>

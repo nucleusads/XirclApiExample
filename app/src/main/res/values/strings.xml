@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">XirclApiExample</string>
+
+    <string name="activitySetup">Setup User Credentials</string>
+
+    <string name="title_activity_main">MainActivity</string>
+    <string name="appSellerRefCode">X_selRefCode</string>
+    <string name="appUserPinCode">X_pinCode</string>
+    <string name="appUserCity">X_city</string>
+    <string name="appUserCountry">X_country</string>
+    <string name="appPriceBefore">X_totalAmountBefore</string>
+    <string name="appPriceAfter">X_totalAmountAfter</string>
+
+    <string name="pIsProfileSetup">isSetup</string>
+    <string name="pIsDefaultUse">isDefault</string>
+    <string name="pUserMobile">userMobile</string>
+    <string name="pUserEmail">userEmail</string>
+
+    <string name="pConnectionUrl">connUrl</string>
+    <string name="pAuthenticationKey">authKey</string>
+    <string name="pMarchantRefCode">refCode</string>
+
+    <!--===============================================App Connection Details===============================================-->
+
+    <!--Suni : 18, Ani : 21 //// http://192.168.0.21:8000/api/v1/ -->
+    <string name="connectionURL">http://192.168.0.21:8000/api/v1/</string>
+    <string name="tagAuthenticationKey">wDgmH6BS0B5s/tcOmfAqtbZEhODMFJV55IeWrTbcW0w=</string>
+    <string name="tagDefaultRefCode">RETUO50,ACQUO40</string>
+    <string name="tagDefaultPinCode">400018"</string>
+    <string name="tagDefaultCity">Mumbai</string>
+    <string name="tagDefaultCountry">India</string>
+
+    <!--===============================================App Connection Details End===============================================-->
+
+    <string name="AppData">xirclsSDKContent</string>
+
+</resources>
