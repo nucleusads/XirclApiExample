@@ -16,11 +16,12 @@ import firstnucleus.xirclapiexample.app.setup.SetupActivity;
 
 
 /**
- * The type Splash screen activity.
+ * The type Splash screen activity to display on start app.
  */
 public class SplashScreenActivity extends Activity {
-
-    /** Duration of wait **/
+    /**
+     * Duration of wait
+     **/
     private final int SPLASH_DISPLAY_LENGTH = 3000;
 
     public void onAttachedToWindow() {
@@ -28,7 +29,6 @@ public class SplashScreenActivity extends Activity {
         Window window = getWindow();
         window.setFormat(PixelFormat.RGBA_8888);
     }
-
 
     /**
      * Called when the activity is first created.
@@ -41,22 +41,25 @@ public class SplashScreenActivity extends Activity {
         StartAnimations();
          /* New Handler to start the Menu-Activity
          * and close this Splash-Screen after some seconds.*/
-        new Handler().postDelayed(new Runnable(){
+        new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                if(AppController.getSharedPref(SplashScreenActivity.this).getBoolean(getString(R.string.pIsProfileSetup), false)){
-                        Intent mainIntent = new Intent(SplashScreenActivity.this , MainActivity.class); //SelectArea
-                        startActivity(mainIntent);
-                        finish();
-               } else {
-                   Intent mainIntent = new Intent(SplashScreenActivity.this, SetupActivity.class);
-                   startActivity(mainIntent);
-                   finish();
-               }
+                if (AppController.getSharedPref(SplashScreenActivity.this).getBoolean(getString(R.string.pIsProfileSetup), false)) {
+                    Intent mainIntent = new Intent(SplashScreenActivity.this, MainActivity.class);
+                    startActivity(mainIntent);
+                    finish();
+                } else {
+                    Intent mainIntent = new Intent(SplashScreenActivity.this, SetupActivity.class);
+                    startActivity(mainIntent);
+                    finish();
+                }
             }
         }, SPLASH_DISPLAY_LENGTH);
     }
 
+    /**
+     * start animation on splash screen
+     */
     private void StartAnimations() {
         Animation anim = AnimationUtils.loadAnimation(this, R.anim.alpha);
         anim.reset();

@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="firstnucleus.xircls.com.setup.SetupActivity">
+    tools:context=".setup.SetupActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@color/white">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_above="@+id/layProfile">
 
             <ScrollView
@@ -25,11 +25,26 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
-
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="16dp"
+                        android:layout_margin="8dp"
+                        android:padding="8dp">
+
+                        <CheckBox
+                            android:id="@+id/ckhUseDefault"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Use Default Credentials"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/bodyFont1" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layConnectionDetails"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
                         android:background="@drawable/border_for_button"
                         android:orientation="vertical"
                         android:padding="16dp">
@@ -44,11 +59,10 @@
                                 android:id="@+id/txtUserHeading"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="Create User Profile"
+                                android:text="Customer Details"
                                 android:textColor="@color/black"
                                 android:textSize="@dimen/bodyFont1"
-                                android:textStyle="bold"/>
-
+                                android:textStyle="bold" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -65,10 +79,10 @@
                                 android:background="@drawable/border"
                                 android:hint="Mobile Number"
                                 android:inputType="phone"
-                                android:padding="12dp"
                                 android:maxLength="10"
+                                android:padding="12dp"
                                 android:textColor="@color/black"
-                                android:textSize="@dimen/bodyFont1"/>
+                                android:textSize="@dimen/bodyFont1" />
 
                             <EditText
                                 android:id="@+id/edtEmailId"
@@ -78,10 +92,9 @@
                                 android:background="@drawable/border"
                                 android:hint="Email Id"
                                 android:inputType="textEmailAddress"
-
                                 android:padding="12dp"
                                 android:textColor="@color/black"
-                                android:textSize="@dimen/bodyFont1"/>
+                                android:textSize="@dimen/bodyFont1" />
 
                             <EditText
                                 android:id="@+id/edtPinCode"
@@ -91,10 +104,10 @@
                                 android:background="@drawable/border"
                                 android:hint="Pin Code"
                                 android:inputType="number"
-                                android:padding="12dp"
                                 android:maxLength="6"
+                                android:padding="12dp"
                                 android:textColor="@color/black"
-                                android:textSize="@dimen/bodyFont1"/>
+                                android:textSize="@dimen/bodyFont1" />
 
                             <EditText
                                 android:id="@+id/edtCity"
@@ -106,7 +119,7 @@
                                 android:inputType="textCapSentences"
                                 android:padding="12dp"
                                 android:textColor="@color/black"
-                                android:textSize="@dimen/bodyFont1"/>
+                                android:textSize="@dimen/bodyFont1" />
 
                             <EditText
                                 android:id="@+id/edtCountry"
@@ -118,19 +131,9 @@
                                 android:inputType="textCapSentences"
                                 android:padding="12dp"
                                 android:textColor="@color/black"
-                                android:textSize="@dimen/bodyFont1"/>
+                                android:textSize="@dimen/bodyFont1" />
 
                         </LinearLayout>
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="16dp"
-                        android:background="@drawable/border_for_button"
-                        android:orientation="vertical"
-                        android:padding="16dp">
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -145,21 +148,12 @@
                                 android:text="Setup Server Connection"
                                 android:textColor="@color/black"
                                 android:textSize="@dimen/bodyFont1"
-                                android:textStyle="bold"/>
+                                android:textStyle="bold" />
 
                         </LinearLayout>
 
-                        <CheckBox
-                            android:id="@+id/ckhUseDefault"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:text="Use Default Credentials"
-                            android:textColor="@color/black"
-                            android:textSize="@dimen/bodyFont1"/>
-
 
                         <LinearLayout
-                            android:id="@+id/layConnectionDetails"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_marginLeft="16dp"
@@ -174,8 +168,8 @@
                                 android:hint="Connection Url"
                                 android:inputType="textCapSentences"
                                 android:padding="12dp"
-                                android:textColor="@color/black"
-                                android:textSize="@dimen/bodyFont1"/>
+                                android:textColor="@color/gray_light"
+                                android:textSize="@dimen/bodyFont1" />
 
                             <EditText
                                 android:id="@+id/edtAuthenticationKey"
@@ -187,7 +181,7 @@
                                 android:inputType="textCapSentences"
                                 android:padding="12dp"
                                 android:textColor="@color/black"
-                                android:textSize="@dimen/bodyFont1"/>
+                                android:textSize="@dimen/bodyFont1" />
 
                             <EditText
                                 android:id="@+id/edtReferenceCode"
@@ -199,10 +193,8 @@
                                 android:inputType="textCapSentences"
                                 android:padding="12dp"
                                 android:textColor="@color/black"
-                                android:textSize="@dimen/bodyFont1"/>
-
+                                android:textSize="@dimen/bodyFont1" />
                         </LinearLayout>
-
                     </LinearLayout>
                 </LinearLayout>
             </ScrollView>
@@ -223,9 +215,7 @@
                 android:text="Save Credentials"
                 android:textColor="@color/white"
                 android:textSize="@dimen/bodyFont1"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
         </LinearLayout>
-
-
     </RelativeLayout>
 </LinearLayout>

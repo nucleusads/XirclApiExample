@@ -6,36 +6,35 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/xircls_icon"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/xircls_icon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
             android:label="@string/title_activity_main"
             android:theme="@style/AppTheme.NoActionBar">
-
         </activity>
         <activity
             android:name=".products.ProductListingActivity"
-            android:label="Product Listing">
+            android:label="@string/title_activity_product_list">
         </activity>
         <activity
             android:name=".products.ProductDetailsActivity"
-            android:label="Product Details">
+            android:label="@string/title_activity_product_details">
         </activity>
         <activity
             android:name=".products.CartActivity"
-            android:label="My Cart">
+            android:label="@string/title_activity_cart">
         </activity>
         <activity
             android:name=".payment.PaymentActivity"
-            android:label="Payment Activity">
+            android:label="@string/title_activity_payment">
         </activity>
         <activity
             android:name=".payment.ThankYouActivity"
-            android:label="ThankYou Activity">
+            android:label="@string/title_activity_thankyou">
         </activity>
         <activity
             android:name=".setup.SetupActivity"

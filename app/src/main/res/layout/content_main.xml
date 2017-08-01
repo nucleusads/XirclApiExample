@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              xmlns:app="http://schemas.android.com/apk/res-auto"
-              xmlns:tools="http://schemas.android.com/tools"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              app:layout_behavior="@string/appbar_scrolling_view_behavior"
-              tools:context="firstnucleus.xircls.com.MainActivity"
-              tools:showIn="@layout/activity_main">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -21,36 +21,49 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="16dp"
                 android:orientation="vertical"
-                >
+                android:padding="16dp">
 
                 <Button
                     android:id="@+id/buttonClick"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="8dp"
-                    android:text="Edit Connection Details"/>
+                    android:text="Edit Credentials" />
 
                 <Button
                     android:id="@+id/btnProductList"
                     android:layout_width="match_parent"
-                    android:padding="8dp"
                     android:layout_height="wrap_content"
-                    android:text="Dummy Product List"/>
+                    android:padding="8dp"
+                    android:text="Product List" />
 
+                <Button
+                    android:id="@+id/btnRemove"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="Regenerate Data" />
 
+                <Button
+                    android:id="@+id/btnGoToCart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="Go To Cart" />
             </LinearLayout>
-
 
             <TextView
                 android:id="@+id/txtResult"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="Hello World!"/>
-
-
+                android:autoLink="web"
+                android:lineSpacingExtra="3sp"
+                android:padding="16dp"
+                android:text="XirclApiExample android app is designed for sandbox testing to get the customer issued offers on product details, cart and myoffers page. You can check this by defult crendential or you can insert your curtomer details such as mobile number, email address, pin code, city and country and your details i.e merchant details such as authentication key and reference code. Then you can see your issued offers to that customer on product details, cart and myoffers page."
+                android:textColor="@color/black"
+                android:textSize="@dimen/buttonFont1" />
         </LinearLayout>
     </ScrollView>
 

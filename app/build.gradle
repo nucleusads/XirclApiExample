@@ -8,7 +8,7 @@ android {
         minSdkVersion 15
         targetSdkVersion 25
         versionCode 1
-        versionName "1.0"
+        versionName "1.0.1"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -28,6 +28,6 @@ dependencies {
     compile 'com.android.support:design:25.3.1'
     compile 'com.github.bumptech.glide:glide:3.7.0'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
-    compile 'com.github.nucleusads:XirclSDK:v1.0.0'
+    compile 'com.github.nucleusads:XirclSDK:v1.0.1'
     testCompile 'junit:junit:4.12'
 }

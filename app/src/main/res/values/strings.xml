@@ -1,9 +1,14 @@
 <resources>
     <string name="app_name">XirclApiExample</string>
 
-    <string name="activitySetup">Setup User Credentials</string>
+    <string name="activitySetup">Setup Credentials</string>
 
-    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_main">Xircl Sandbox Testing</string>
+    <string name="title_activity_product_list">Product Listing</string>
+    <string name="title_activity_product_details">Product Details</string>
+    <string name="title_activity_cart">My Cart</string>
+    <string name="title_activity_payment">Order Confirmation</string>
+    <string name="title_activity_thankyou">Thank You</string>
     <string name="appSellerRefCode">X_selRefCode</string>
     <string name="appUserPinCode">X_pinCode</string>
     <string name="appUserCity">X_city</string>
@@ -13,6 +18,7 @@
 
     <string name="pIsProfileSetup">isSetup</string>
     <string name="pIsDefaultUse">isDefault</string>
+    <string name="pIsAppliedCoupon">isAppliedCoupon</string>
     <string name="pUserMobile">userMobile</string>
     <string name="pUserEmail">userEmail</string>
 
@@ -23,15 +29,23 @@
     <!--===============================================App Connection Details===============================================-->
 
     <!--Suni : 18, Ani : 21 -->
-    <string name="connectionURL">http://192.168.0.21:8000/api/v1/</string>
-    <string name="tagAuthenticationKey">wDgmH6BS0B5s/tcOmfAqtbZEhODMFJV55IeWrTbcW0w=</string>
-    <string name="tagDefaultRefCode">RETUO50,ACQUO40</string>
-    <string name="tagDefaultPinCode">400018"</string>
+    <string name="tagDefaultConnectionURL">https://www.demo.xircls.in/api/v1/</string>
+    <string name="tagDAuthenticationKey">wDgmH6BS0B5s/tcOmfAqtU0npzedwSxf9Yvel+U+elQ=</string>
+    <string name="tagDefaultRefCode">Get30,GET50,GET20,GET40</string>
+
+
+    <string name="tagDefaultPhone">9999999954</string>
+    <string name="tagDefaultEmail">testwd@xircls.com</string>
+
+
+    <string name="tagDefaultPinCode">400018</string>
     <string name="tagDefaultCity">Mumbai</string>
     <string name="tagDefaultCountry">India</string>
+
 
     <!--===============================================App Connection Details End===============================================-->
 
     <string name="AppData">xirclsSDKContent</string>
-
+    <string name="isAppliedOffer">isApplied</string>
+    <string name="offerSavingValue">offerSavingValue</string>
 </resources>

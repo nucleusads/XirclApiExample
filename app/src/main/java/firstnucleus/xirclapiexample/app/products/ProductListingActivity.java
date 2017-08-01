@@ -11,23 +11,26 @@ import firstnucleus.xirclapiexample.app.common.ProductAdapter;
 
 
 /**
- * The type Product listing.
+ * The type Product listing to get the product listing.
  */
 public class ProductListingActivity extends AppCompatActivity {
 
+    // Declaration of UI elements
     private RecyclerView recyclerView;
     private ProductAdapter mAdapter;
-    /**
-     * The constant productPosition.
-     */
+
+    // Initialize constant productPosition.
     public static int productPosition = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_product_listing);
+
+        // Binding XML to Java
         recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
-        mAdapter = new ProductAdapter(this, MainActivity.productDAOs);
+
+        mAdapter = new ProductAdapter(this, MainActivity.productDAOs,false);
         GridLayoutManager gridLayoutManager = new GridLayoutManager(this, 2);
         gridLayoutManager.setOrientation(GridLayoutManager.VERTICAL);
         recyclerView.setLayoutManager(gridLayoutManager);

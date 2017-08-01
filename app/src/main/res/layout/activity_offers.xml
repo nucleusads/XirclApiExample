@@ -1,30 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF"
-    tools:context="firstnucleus.xircls.com.products.ProductDetailsActivity">
+    tools:context=".products.ProductDetailsActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_height="match_parent"
         android:background="#FFFFFF"
         android:gravity="center"
-        android:orientation="vertical">
-
-        <ImageView
-            android:id="@+id/imgProduct"
-            android:layout_width="170dp"
-            android:layout_height="170dp"/>
+        android:orientation="vertical"
+        android:weightSum="1">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
             android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imgProduct"
+                android:layout_width="170dp"
+                android:layout_height="170dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:gravity="center|bottom"
             android:orientation="vertical">
 
             <TextView
@@ -35,13 +42,13 @@
                 android:padding="8dp"
                 android:text="product name"
                 android:textColor="@color/black"
-                android:textSize="@dimen/bodyFont1"/>
+                android:textSize="@dimen/bodyFont1" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="8dp"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:padding="8dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -53,20 +60,19 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                          android:text="Price :   Rs."
+                        android:text="Price :   Rs."
                         android:textColor="@color/black"
-                        android:textSize="@dimen/bodyFont1"
-                         />
+                        android:textSize="@dimen/bodyFont1" />
 
                     <TextView
                         android:id="@+id/txtProductPrice"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                         android:text=""
+                        android:text=""
                         android:textColor="@color/black"
                         android:textSize="@dimen/bodyFont1"
-                        android:textStyle="bold"/>
+                        android:textStyle="bold" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -86,22 +92,19 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:gravity="center"
-
                             android:text="Discount :   Rs."
                             android:textColor="@color/black"
-                            android:textSize="@dimen/bodyFont1"
-                             />
+                            android:textSize="@dimen/bodyFont1" />
 
                         <TextView
                             android:id="@+id/txtPriceAfterApply"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:gravity="center"
-
                             android:text=""
                             android:textColor="@color/black"
                             android:textSize="@dimen/bodyFont1"
-                            android:textStyle="bold"/>
+                            android:textStyle="bold" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -114,23 +117,21 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:gravity="center"
-
                             android:text="Saving :   Rs."
                             android:textColor="@color/black"
-                            android:textSize="@dimen/bodyFont1"
-                             />
+                            android:textSize="@dimen/bodyFont1" />
 
                         <TextView
                             android:id="@+id/txtSavingValue"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:gravity="center"
-
                             android:text=""
                             android:textColor="@color/black"
                             android:textSize="@dimen/bodyFont1"
-                            android:textStyle="bold"/>
+                            android:textStyle="bold" />
                     </LinearLayout>
+
                 </LinearLayout>
 
             </LinearLayout>
@@ -139,12 +140,13 @@
                 android:id="@+id/txtProductOffer"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@color/lightPink"
                 android:gravity="center"
                 android:padding="16dp"
-                android:text="Offer(0)"
-                android:textColor="@color/black"
+                android:text="0 offer available on product\nView"
+                android:textColor="@color/white"
                 android:textSize="@dimen/bodyFont1"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/txtAddToCart"
@@ -156,8 +158,7 @@
                 android:text="Add To Cart"
                 android:textColor="@color/white"
                 android:textSize="@dimen/bodyFont1"
-                android:textStyle="bold"/>
-
+                android:textStyle="bold" />
         </LinearLayout>
 
     </LinearLayout>

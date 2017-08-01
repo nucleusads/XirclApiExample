@@ -7,12 +7,6 @@ import android.support.annotation.NonNull;
  */
 public class ProductDAO {
     /**
-     * Instantiates a new Product dao.
-     */
-    public ProductDAO() {
-    }
-
-    /**
      * Gets product name.
      *
      * @return the product name
